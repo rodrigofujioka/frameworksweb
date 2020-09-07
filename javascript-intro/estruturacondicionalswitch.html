@@ -5,17 +5,14 @@
         <script>
             function verificarMarcaCerta(marca){
 
-                if(marca === 'Fujioka' || marca ==='Fuji'){
-                    return "Marca certa"
-                } 
+                switch(marca){
+                    case 'Fujioka' : return "Marca Certa";
+                    case 'xingling' : return "Outra Marca";
+                    default : return "Outra Marca";
+                }    
 
-                if(marca !== 'xingling' ){
-                    return "Outra Marca"
-                }else {
-                    return "Marca XingLing"
-                }
+            }      
 
-            }                     
             var retorno = verificarMarcaCerta("Fujioka");
             console.log(retorno);
             retorno = verificarMarcaCerta("xingling");
