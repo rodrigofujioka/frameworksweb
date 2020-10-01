@@ -1,6 +1,10 @@
+
+const con = require("../config/conexao.js");
 module.exports = app => {
 
+
     app.get('/agendamento', (req, res) =>
+      
       res.send('Get Agendamento Fujioka')
     )
   
